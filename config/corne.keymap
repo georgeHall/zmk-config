@@ -19,26 +19,32 @@
       >;
     };
 
-               lower_layer { bindings = <
-   &trans &trans &trans &kp COLON &kp ESCAPE &none       &none    &none    &none  &none     &none  &trans
-   &trans &none  &none  &none     &kp HOME   &kp END     &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &trans &none  &none  &none     &kp PG_UP  &kp PG_DN   &none    &none    &none  &none     &none  &none
-                        &trans    &trans     &trans      &trans   &mo 3    &trans
-                      >;};
+    lower_layer { 
+      bindings = <
+        &trans &trans &trans &kp COLON &kp ESCAPE &none       &none    &none    &none  &none     &none  &trans
+        &trans &none  &none  &none     &kp HOME   &kp END     &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+        &trans &none  &none  &none     &kp PG_UP  &kp PG_DN   &none    &none    &none  &none     &none  &none
+                             &trans    &trans     &trans      &trans   &mo 3    &trans
+      >;
+    };
 
-                raise_layer { bindings = <
-   &trans &kp N1     &kp N2 &kp N3 &kp N4     &kp N5      &kp N6    &kp N7    &kp N8    &kp N9   &kp N0   &trans
-   &trans &none      &none  &none  &none      &none       &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC &kp NUBS &kp GRAVE
-   &trans &none      &none  &none  &none      &none       &kp UNDER &kp MINUS &kp EQUAL &kp PLUS &kp PIPE &kp TILDE
-                            &trans &mo 3      &trans      &trans    &trans    &trans 
-                        >;};
+    raise_layer {
+      bindings = <
+        &trans &kp N1     &kp N2 &kp N3 &kp N4     &kp N5      &kp N6    &kp N7    &kp N8    &kp N9   &kp N0   &trans
+        &trans &none      &none  &none  &none      &none       &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC &kp NUBS &kp GRAVE
+        &trans &none      &none  &none  &none      &none       &kp UNDER &kp MINUS &kp EQUAL &kp PLUS &kp PIPE &kp TILDE
+                                 &trans &mo 3      &trans      &trans    &trans    &trans 
+      >;
+    };
 
-                 alt_layer { bindings = <
-   &trans &none      &none  &none  &none      &none       &none     &none     &none     &none    &none    &none 
-   &trans &none      &none  &none  &none      &none       &none     &none     &none     &none    &none    &none 
-   &trans &bt BT_CLR &none  &none  &bt BT_PRV &bt BT_NXT  &none     &none     &none     &none    &none    &none 
-                            &trans &trans     &trans      &trans    &trans    &trans
-                        >;};
+    alt_layer {
+      bindings = <
+        &trans &none      &none  &none  &none      &none       &none     &none     &none     &none    &none    &none 
+        &trans &none      &none  &none  &none      &none       &none     &none     &none     &none    &none    &none 
+        &trans &bt BT_CLR &none  &none  &bt BT_PRV &bt BT_NXT  &none     &none     &none     &none    &none    &none 
+                                 &trans &trans     &trans      &trans    &trans    &trans
+      >;
+    };
   };
 };
  
