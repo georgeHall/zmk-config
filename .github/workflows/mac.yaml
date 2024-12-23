@@ -1,0 +1,14 @@
+on: 
+  push:
+    paths-ignore:
+      - "config/corne/windows/**"
+  pull_request: {}
+  workflow_dispatch: {}
+
+jobs:
+  build_mac:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      config_path: ./config/corne/mac
+      archive_name: corne_mac
+
